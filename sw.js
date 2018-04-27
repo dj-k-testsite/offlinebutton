@@ -14,6 +14,7 @@ self.addEventListener("fetch", function(event) {
   console.log(event.request.url);
   fetch(event.request).catch(function() {
     return caches.match(event.request).then(function(response) {
+      console.log(response);
       if (response) {
         return response;
       } else {
