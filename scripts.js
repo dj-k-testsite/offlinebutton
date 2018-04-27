@@ -1,3 +1,4 @@
+document.getElementById('log1').innerHTML = 'Script started'
 try {
   let fileInput = document.getElementsByTagName('input')[0];
   alert(fileInput.disabled);
@@ -8,3 +9,4 @@ try {
 } catch (e) {
   alert(e);
 }
+document.getElementById('log2').innerHTML = 'Script ended'
