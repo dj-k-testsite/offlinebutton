@@ -3,7 +3,7 @@ self.addEventListener("install", function(e) {
     caches.open("offlinebutton").then(function(cache) {
       return cache.addAll([
         "./index.html",
-        "./script.js",
+        "./scripts.js",
       ]);
     })
   );
