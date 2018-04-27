@@ -2,8 +2,9 @@ self.addEventListener("install", function(e) {
   e.waitUntil(
     caches.open("offlinebutton").then(function(cache) {
       return cache.addAll([
-        "./index.html",
-        "./scripts.js",
+        './index.html',
+        '/index.html?homescreen=1',
+        './scripts.js',
       ]);
     })
   );
