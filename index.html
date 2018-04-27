@@ -4,7 +4,12 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="manifest.json">
-    <script src="dist/app.js"></script>
+  </head>
+  <body>
+    <input type='file' />
+    <button>Button</button>
+
+    <script src="script.js"></script>
 
     <script>
     if('serviceWorker' in navigator) {
@@ -13,9 +18,5 @@
         .then(function() { console.log("Service Worker Registered"); });
     }
     </script>
-  </head>
-  <body>
-    <input type='file' />
-    <button>Button</button>
   </body>
 </html>
