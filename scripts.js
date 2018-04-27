@@ -4,8 +4,8 @@ try {
   alert(fileInput.disabled);
   fileInput.addEventListener('touchstart', function() { alert('tap'); fileInput.click(); });
 
-  alert(body.disabled);
-  alert(html.disabled);
+  alert(document.getElementsByTagName('body')[0].disabled);
+  alert(document.getElementsByTagName('html')[0].disabled);
 } catch (e) {
   alert(e);
 }
