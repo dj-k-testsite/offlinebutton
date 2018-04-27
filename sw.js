@@ -1,6 +1,6 @@
 self.addEventListener("install", function(e) {
   e.waitUntil(
-    caches.open("halogen-web-audio-player-demo").then(function(cache) {
+    caches.open("offlinebutton").then(function(cache) {
       return cache.addAll([
         "./index.html",
         "./script.js",
